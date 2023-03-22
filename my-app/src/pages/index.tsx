@@ -27,32 +27,22 @@ export default function Home()  {
         <CardH/> 
           
  
-        <p> 
+        <div> 
          
-          <p>
+          <div>
             <PageCard />
         
-          </p>
-         </p>
+          </div>
+         </div>
          
-         <p style={{
+         <div style={{
           color: theme.colors.primary.value,
           fontSize: theme.fontSizes.sm.value,
           padding: `${theme.space[2].value} ${theme.space[4].value}`
-        }}> Helping people get their money out of banks that bet on it, & getting it on their own hands</p>
+        }}> Helping people get their money out of banks that bet on it, & getting it on their own hands</div>
          <br></br>
 
-         <h2> How will we achieve this? </h2>
-<div style={{
-          color: theme.colors.primary.value,
-          fontSize: theme.fontSizes.sm.value,
-          padding: `${theme.space[2].value} ${theme.space[4].value}`
-        }}>
-
-         <p>creating a mobile app for people to buy crypto </p>
-         <p> the app will also be a wallet for people to safely store their money </p>
-  </div>
-
+      
    
     
     <h2> coming soon to:</h2>
