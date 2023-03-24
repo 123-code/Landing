@@ -6,17 +6,17 @@ export default function PageCard() {
       <Grid sm={12} md={5}>
         <Card css={{ mw: "330px" }}>
           <Card.Header>
-            <Text b>How to use it?</Text>
+            <Text b>Como usarla?</Text>
           </Card.Header>
           <Card.Divider />
           <Card.Body css={{ py: "$10" }}>
             <Text>
                 <li>
-                Buy and store bitcoin
+               Compra y guarda Bitcoin
                 </li>
-
+                <h3> o </h3>
                 <li>
-                store your money using our stablecoins
+                Guarda tu dinero en dólares digitales
                 </li>
             </Text>
           </Card.Body>
@@ -31,19 +31,19 @@ export default function PageCard() {
       <Grid sm={12} md={5}>
         <Card css={{ mw: "330px" }}>
           <Card.Header>
-            <Text b>Why use it?</Text>
+            <Text b>Porque usarlo?</Text>
           </Card.Header>
           <Card.Divider />
           <Card.Body css={{ py: "$10" }}>
             <Text>
-             Safe from bank runs , free from inflation
+             Ten la custodia completa de tu dinero
             </Text>
           </Card.Body>
           <Card.Divider />
           <Card.Footer>
             <Row justify="flex-end">
               <Button size="sm" color="secondary">
-                Learn more
+                ver más
               </Button>
             </Row>
           </Card.Footer>

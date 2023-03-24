@@ -1,27 +1,44 @@
-import { Card, Grid, Text, Link } from "@nextui-org/react";
+import React from 'react';
+import { BsFacebook } from 'react-icons/bs';
+import { FaTwitter } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
+import { SiEthereum } from 'react-icons/si';
+import { BsPhone } from 'react-icons/bs';
 
-export default function Footer() {
+import logo from '../Imgs/logoRB.png';
+
+const Footer = () => {
   return (
-    <Card css={{ p: "$1", mw: "1500px" }}>
-      <Card.Header>
-        
-        <Grid.Container css={{ pl: "$6" }}>
-          <Grid xs={12}>
-            <Text h4 css={{ lineHeight: "$xs" }}>
-             Payz
-            </Text>
-          </Grid>
-          <Grid xs={12}>
-        
-          </Grid>
-        </Grid.Container>
-      </Card.Header>
-      <Card.Body css={{ py: "$2" }}>
+    <footer
+      style={{
+        backgroundColor: '#333',
+        color: '#fff',
+        position: 'fixed',
+        bottom: 0,
+        left: 0,
+        right: 0,
+        display: 'flex',
+        margin: 0,
+        padding: 0,
+     
+       
+      }}
+    >
+      <div className="footer__container">
+      <p>© Payz 2023</p>
+
+
+      <BsFacebook/>
+   
       
-      </Card.Body>
-      <Card.Footer>
-    
-      </Card.Footer>
-    </Card>
+      <FaTwitter/>
+      <FaInstagram/>
+      <SiEthereum/>
+      <BsPhone/>
+        
+      </div>
+    </footer>
   );
-}
+};
+
+export default Footer;

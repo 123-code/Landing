@@ -9,6 +9,7 @@ import PageCard from './Components/card'
 import CardH from './Components/CardH'
 import Footer from './Components/Footer'
 import { useTheme, Text } from '@nextui-org/react';
+
 //my-app/public/download.png
 
 const inter = Inter({ subsets: ['latin'] })
@@ -17,16 +18,44 @@ export default function Home()  {
   const { theme } = useTheme();
   return (
   
-    <body style={{ backgroundColor: "#EEDED6"}}>
+    <div style={{ backgroundColor: "#EEDED6", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
       
       <div style={{ color: "green"}}>
-        <h1> Payz, <br/> A crypto wallet for the third world </h1>
+         <Text
+        h1
+        size={60}
+        css={{
+          textGradient: "45deg, $blue600 -20%, $pink600 50%",
+        }}
+        weight="bold"
+      >
+        Un
+      </Text>
+      <Text
+        h1
+        size={60}
+        css={{
+          textGradient: "45deg, $purple600 -20%, $pink600 100%",
+        }}
+        weight="bold"
+      >
+        Lugar Seguro
+      </Text>
+      <Text
+        h1
+        size={60}
+        css={{
+       
+          textGradient: "45deg, $yellow600 -20%, $red600 100%"
+
+        }}
+        weight="bold"
+      >
+        Para tu dinero 
+      </Text>
 
 
-        <h2 style={{ color: "green"}}> What is Payz? </h2>
-        <CardH/> 
-          
- 
+        <h2 style={{ color: "green"}}> Compra y guarda tus Activos digitales en Ecuador </h2>
         <div> 
          
           <div>
@@ -35,24 +64,19 @@ export default function Home()  {
           </div>
          </div>
          
-         <div style={{
-          color: theme.colors.primary.value,
-          fontSize: theme.fontSizes.sm.value,
-          padding: `${theme.space[2].value} ${theme.space[4].value}`
-        }}> Helping people get their money out of banks that bet on it, & getting it on their own hands</div>
+         
          <br></br>
 
       
    
     
-    <h2> coming soon to:</h2>
+    <h2> Descargala muy pronto en: </h2>
          <Image style={{ width: "300px", height: "100px"}}  src={download} alt="Payz" />
 
          <Image style={{ width: "250px", height: "100px"}} src={image} alt="Payz" />
       </div>
       <Footer/>
-    </body>
+    </div>
 
   )
 }
-
