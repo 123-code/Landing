@@ -9,7 +9,12 @@ import PageCard from './Components/card'
 import CardH from './Components/CardH'
 import Footer from './Components/Footer'
 import { useTheme, Text } from '@nextui-org/react';
-import Navbar from './Components/Navbar'
+import Nav from './Components/Navbar'
+import { BsFacebook } from 'react-icons/bs';
+import { FaAppStoreIos } from 'react-icons/fa';
+import { BsAndroid2 } from 'react-icons/bs';
+import { SiEthereum } from 'react-icons/si';
+import { BsPhone } from 'react-icons/bs';
 
 //my-app/public/download.png
 
@@ -20,7 +25,7 @@ export default function Home()  {
   return (
   // <Navbar/>
   <>
-   <Navbar/>
+   <Nav/>
     <div style={{ backgroundColor: "#EEDED6", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
      
       <div style={{ color: "green"}}>
@@ -74,9 +79,14 @@ export default function Home()  {
    
     
     <h2> Descargala muy pronto en: </h2>
-         <Image style={{ width: "300px", height: "100px"}}  src={download} alt="Payz" />
-
-         <Image style={{ width: "250px", height: "100px"}} src={image} alt="Payz" />
+    <div style={{color:"black"}}>
+      <h1>
+      <FaAppStoreIos/>
+         <BsAndroid2/>
+      </h1>
+   
+    </div>
+         
       </div>
       <Footer/>
     </div>

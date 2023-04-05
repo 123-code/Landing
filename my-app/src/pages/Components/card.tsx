@@ -39,13 +39,15 @@ export default function PageCard() {
              Ten la custodia completa de tu dinero
             </Text>
           </Card.Body>
+          <h3> Unete a la lista de espera:</h3>
+          <input type="text" placeholder="email"></input>
           <Card.Divider />
           <Card.Footer>
             <Row justify="flex-end">
               <Button size="sm" color="secondary">
                 ver más
               </Button>
-            </Row>
+            </Row> 
           </Card.Footer>
         </Card>
       </Grid>
