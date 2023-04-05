@@ -25,7 +25,7 @@ const Footer = () => {
       }}
     >
       <div className="footer__container">
-      <p>© Payz 2023</p>
+      <li>© Payz 2023</li>
 
 
       <BsFacebook/>

@@ -9,6 +9,7 @@ import PageCard from './Components/card'
 import CardH from './Components/CardH'
 import Footer from './Components/Footer'
 import { useTheme, Text } from '@nextui-org/react';
+import Navbar from './Components/Navbar'
 
 //my-app/public/download.png
 
@@ -17,9 +18,11 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home()  {
   const { theme } = useTheme();
   return (
-  
+  // <Navbar/>
+  <>
+   <Navbar/>
     <div style={{ backgroundColor: "#EEDED6", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
-      
+     
       <div style={{ color: "green"}}>
          <Text
         h1
@@ -78,5 +81,7 @@ export default function Home()  {
       <Footer/>
     </div>
 
+  </>
+ 
   )
 }
